@@ -159,7 +159,7 @@ function loop() {
   }
   
   
-  setTimeout(loop, 1000);
+  setTimeout(loop, 500);
   // console.log(".");
   
 }
