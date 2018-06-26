@@ -106,22 +106,21 @@ function loop() {
   var temp = vm.mfruit;
   var weight = vm.mweight;
   var count = JSON.parse(temp).items.length;
-  var same = 0;
 
   if(weight !== ""){
 
     var fruit = JSON.parse(temp).items[0].cls;
     for(i=1;i<count;i++){
       var fruit2 = JSON.parse(temp).items[i].cls;
-      // console.log("0:"+fruit+","+i+":"+fruit2);
-
-      if(fruit2 !== fruit){
-        same += 1;
+      if(fruit == fruit2){
+        vm.msg="";
       }
-
+      else{
+        vm.msg = "Please put one type fruits.";
+      }
     }
     
-    if (same == 0) {
+    if (vm.msg == "") {
       fruit = fruit.charAt(0).toUpperCase() + fruit.slice(1);
       // var count = JSON.parse(temp).items.length;
       var kg = JSON.parse(weight).weight;
@@ -135,7 +134,7 @@ function loop() {
       vm.msg = "";
     }
     else{
-      vm.msg = "Please put one type fruits.";
+      // vm.msg = "Please put one type fruits.";
       // console.log("none");
       vm.fruit = "Scale";
       vm.count = 0;

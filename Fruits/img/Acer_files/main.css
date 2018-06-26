@@ -156,13 +156,13 @@ div.desc {
 
 }
 
-@media (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1920px) {
   .fruit-gram img{
-    width: 320px;
+    width: 420px;
 
   }
   .fruit-piece img{
-    width: 100px;
+    width: 200px;
   }
 
   .wrapper{
@@ -170,18 +170,18 @@ div.desc {
   }
 
   .fruit-right {
-    font-size: 2em;
+    font-size: 3em;
   }
   .fruit-title h2{
-    font-size: 5em;
+    font-size: 7em;
     margin: 10px;
   }
   .fruit-title p{
-    font-size: 2em;
+    font-size: 4em;
     margin: 20px;
   }
   .fruit-title .msg{
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 500;
     margin: 10px;
     color: red !important;
