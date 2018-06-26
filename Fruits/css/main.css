@@ -156,9 +156,9 @@ div.desc {
 
 }
 
-@media (min-width: 1200px) and (max-width: 1920px) {
+@media (max-width: 1280px) {
   .fruit-gram img{
-    width: 320px;
+    width: 220px;
 
   }
   .fruit-piece img{
@@ -166,19 +166,19 @@ div.desc {
   }
 
   .wrapper{
-    padding: 100px 150px !important;
+    padding: 30px 100px !important;
   }
 
   .fruit-right {
     font-size: 2em;
   }
   .fruit-title h2{
-    font-size: 5em;
-    margin: 10px;
+    font-size: 4em;
+    margin: 5px;
   }
   .fruit-title p{
     font-size: 2em;
-    margin: 20px;
+    margin: 10px;
   }
   .fruit-title .msg{
     font-size: 2em;
