@@ -108,8 +108,10 @@ function loop() {
    //vm.mweight = cpf.getAiWeightValue();
 
   //find out how many pieces apple in the scale
+  if(cpf){
   var temp = cpf.getAiCamValue();
   var weight = cpf.getAiWeightValue();
+  }
   var count = JSON.parse(temp).items.length;
   var same = 0;
 
