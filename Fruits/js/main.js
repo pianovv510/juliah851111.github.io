@@ -78,9 +78,11 @@ var vm = new Vue({
 
 
 
-var windowW = $(window).width();
-var windowsH = $(window).height();
-console.log("width:"+windowW+",height:"+windowsH);
+$(function(){
+  var windowW = $(window).width();
+  var windowsH = $(window).height();
+  console.log("width:"+windowW+",height:"+windowsH);
+});
 
 
 function loop() {
