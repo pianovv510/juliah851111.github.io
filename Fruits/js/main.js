@@ -109,8 +109,9 @@ function loop() {
 
   //find out how many pieces apple in the scale
   if(cpf){
-  var temp = cpf.getAiCamValue();
-  var weight = cpf.getAiWeightValue();
+  //var temp = cpf.getAiCamValue();
+  var temp = '{"items": [{"pos": [2, 78, 634, 477], "conf": 0.9493815302848817, "cls": "apple"},{"pos": [2, 78, 634, 477], "conf": 0.9493815302848817, "cls": "apple"}]}';
+  var weight = '{"weight": 445}';//cpf.getAiWeightValue();
   }
   var count = JSON.parse(temp).items.length;
   var same = 0;
