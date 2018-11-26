@@ -1,4 +1,4 @@
-    var val= 0;
+    var val= 111;
     var valarray = [];
     var json = [];
     var valstring = "";
