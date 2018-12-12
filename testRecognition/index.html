@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Recognition test</h2>
+
+<button id="clickbtn" type="button">Click Me!</button>
+<p id="demo">Result:</p>
+<script>
+var clickbtn = document.getElementById("clickbtn");
+
+clickbtn.addEventListener('click', function(event) {
+
+　　　// Start speech recognition function with English language
+　　　cpf.initSpeechRecognition("en-US");
+	  
+	  // Chinese language
+      //cpf.initSpeechRecognition("cmn-Hant-TW");
+}
+
+//here is callback function
+function GetRecognitionListenStatus(Status){
+
+　　　//console.log('Listen status = ' + Status);
+　　　if (Status == "true"){
+		//do somethining
+		console.log('Listen status = ' + Status);　　
+　　　}else{
+　　　　//do somethining
+		console.log('Listen status = ' + Status);
+　　　}
+
+}
+
+//here is callback function
+function GetRecognizeResult(Result,Type){
+ document.getElementById("demo").innerHTML = "Result:" + Result;
+　　　//console.log('Result = ' + Result);
+　　　//if(Result.includes("turn on")) {
+
+cpf.SetSpeech("On", "en-US", "Hello", 0.1, 0.1);
+// If this SetSpeech function had been set to "On", when SpeechRecognition function is called, device will repeat the voice.
+
+cpf.SetSpeech("Off", "", "", "", "");
+// When set the parameter to "Off", it will disable the repeat behavior.
+
+cpf.SetSpeech("Off", "en-US", Result, 0.1, 0.1);
+// It will read aloud the word "Good" once.
+　　　　//　　cpf.request('["digitalWrite", 2 , 1]'); // the light turn on
+
+　　　//}
+
+}
+</script>
+  
+</body>
+</html>
