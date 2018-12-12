@@ -4,12 +4,12 @@
 
 <h2>Recognition test</h2>
 
-<button id="clickbtn" type="button">Click Me!</button>
+<button id="clickbtn" type="button" onclick="initRec()>Click Me!</button>
 <p id="demo">Result:</p>
 <script>
-var clickbtn = document.getElementById("clickbtn");
-
-clickbtn.addEventListener('click', function(event) {
+//var clickbtn = document.getElementById("clickbtn");
+function initRec(){
+//clickbtn.addEventListener('click', function(event) {
 
 　　　// Start speech recognition function with English language
 　　　cpf.initSpeechRecognition("en-US");
