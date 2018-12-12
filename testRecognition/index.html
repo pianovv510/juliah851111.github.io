@@ -2,19 +2,18 @@
 <html>
 <body>
 
-<h2>Recognition test3</h2>
+<h2>Recognition test</h2>
 
 <button id="clickbtn" type="button" onclick="initRec()">Click Me!</button>
+<p id="recogstatus">Recognition Status:</p>
 <p id="demo">Result:</p>
 <script>
-//var clickbtn = document.getElementById("clickbtn");
-function initRec(){
-//clickbtn.addEventListener('click', function(event) {
 
-　　　// Start speech recognition function with English language
+function initRec(){
+
 　　　cpf.initSpeechRecognition("en-US");
 	  
-	  // Chinese language
+      // Chinese language
       //cpf.initSpeechRecognition("cmn-Hant-TW");
 }
 
@@ -22,13 +21,13 @@ function initRec(){
 function GetRecognitionListenStatus(Status){
 
 　　　//console.log('Listen status = ' + Status);
-　　　if (Status == "true"){
+　　　//if (Status == "true"){
 		//do somethining
-		console.log('Listen status = ' + Status);　　
-　　　}else{
+	    document.getElementById("recogstatus").innerHTML = "Recognition Status:" + Status;
+　　　//}else{
 　　　　//do somethining
-		console.log('Listen status = ' + Status);
-　　　}
+	   //document.getElementById("recogstatus").innerHTML = "Recognition Status:" + Status;
+　　　//}
 
 }
 
