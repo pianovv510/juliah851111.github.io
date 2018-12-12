@@ -18,7 +18,10 @@ function initRec(){
 
 //here is callback function
 function GetRecognitionListenStatus(Status){
-	    document.getElementById("recogstatus").innerHTML = "Recognition Status:" + Status;
+	if(Status)
+	    document.getElementById("recogstatus").innerHTML = "Recognition Status:" + "recognizing...";
+	else
+	    document.getElementById("recogstatus").innerHTML = "Recognition Status:" + "done";
 }
 
 //here is callback function
